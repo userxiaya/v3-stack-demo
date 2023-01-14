@@ -12,7 +12,7 @@
   },
   "dependencies": {
     "pinia": "^2.0.28",
-    "v3-stack-router": "^1.0.1",
+    "v3-stack-router": "^1.0.2",
     "vue": "^3.2.45",
     "vue-router": "^4.1.6"
   },
