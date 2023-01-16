@@ -6,7 +6,12 @@ onMounted(() => {
   console.log('home')
 })
 const next = () => {
-  router.push('/about')
+  router.push({
+    name:'about',
+    params: {
+      id: 1
+    }
+  })
 }
 </script>
 

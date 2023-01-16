@@ -1,6 +1,7 @@
 <template>
   <div class="about">
     <h1>This is an about page</h1>
+    <h1 @click="next">about2</h1>
     <button @click="reload">刷新当前页面</button>
   </div>
 </template>
@@ -10,13 +11,24 @@
 </style>
 <script lang="ts" setup>
 import { onMounted } from 'vue';
+import { useRoute, useRouter } from 'vue-router';
 const sleep = (time: number) => new Promise(resolve => setTimeout(resolve, time))
 await sleep(1000)
 defineProps<{
-  reload: ()=>void
+  reload: () => void
 }>()
-onMounted(() => {  
-  console.log('about');
+const router = useRouter()
+const route = useRoute()
+const next = () => {
+  router.push({
+    name: 'about',
+    params: {
+      id: 2
+    }
+  })
+}
+onMounted(() => {
+  console.log(route.params);
 
 })
 </script>

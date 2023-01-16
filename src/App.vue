@@ -4,8 +4,16 @@ import { lazyLoader, stackView } from 'v3-stack-router'
 
 <template>
   <stackView v-slot="{ Component }" backName="slide-right" forwardName="slide-left">
-    <lazyLoader v-slot="{ reload }">
-      <component :is="Component" :reload="reload"/>
+    <lazyLoader>
+      <template v-slot:loading>
+        加载插槽位
+      </template>
+      <template v-slot:error>
+        错误插槽位
+      </template>
+      <template v-slot:default="{ reload }">
+        <component :is="Component" :reload="reload" />
+      </template>
     </lazyLoader>
   </stackView>
 </template>

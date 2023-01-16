@@ -10,7 +10,7 @@ const router = initRouter({
       component: () => import("@/views/HomeView.vue")
     },
     {
-      path: '/about',
+      path: '/about/:id',
       name: 'about',
       component: () => import('../views/AboutView.vue')
     }
