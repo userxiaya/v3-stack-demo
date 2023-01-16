@@ -12,7 +12,7 @@ specifiers:
   npm-run-all: ^4.1.5
   pinia: ^2.0.28
   typescript: ~4.7.4
-  v3-stack-router: ^1.0.2
+  v3-stack-router: ^1.1.0
   vite: ^4.0.0
   vue: ^3.2.45
   vue-router: ^4.1.6
@@ -20,7 +20,7 @@ specifiers:
 
 dependencies:
   pinia: 2.0.28_e7lp6ggkpgyi5vqd44m2kxvk6i
-  v3-stack-router: 1.0.2_typescript@4.7.4
+  v3-stack-router: 1.1.0_typescript@4.7.4
   vue: 3.2.45
   vue-router: 4.1.6_vue@3.2.45
 
@@ -2640,8 +2640,8 @@ packages:
     resolution: {integrity: sha512-EPD5q1uXyFxJpCrLnCc1nHnq3gOa6DZBocAIiI2TaSCA7VCJ1UJDMagCzIkXNsUYfD1daK//LTEQ8xiIbrHtcw==}
     dev: true
 
-  /v3-stack-router/1.0.2_typescript@4.7.4:
-    resolution: {integrity: sha512-Sg/z/BJsZfmxQr1zBxiqXSs4HlIbz4rKmc52+eGs2M33DqFrkQ71DhGPXwIhOIxH6qKdKKRpsepT5YXRnj5fqg==}
+  /v3-stack-router/1.1.0_typescript@4.7.4:
+    resolution: {integrity: sha512-Ej+Y5McM7ecg1Lw84zZFTQZgkZX9BOjHojQLjJnNItfC0m1dMIlHNw384FSmmMHujbGZFwANAoSR4RFac25UdA==}
     dependencies:
       rollup-plugin-typescript2: 0.34.1_typescript@4.7.4
     transitivePeerDependencies:
